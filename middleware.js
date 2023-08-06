@@ -11,16 +11,12 @@ export default function middleware(req) {
   let url = req.url;
 
   if (!verify && url.includes("/profile")) {
-    return NextResponse.redirect("http://localhost:3000/");
+    return NextResponse.redirect("https://brave-thought.vercel.app/");
   }
   if (!verify && url.includes("/create-thought")) {
-    return NextResponse.redirect("http://localhost:3000/");
+    return NextResponse.redirect("https://brave-thought.vercel.app/");
   }
   if (!verify && url.includes("/update-thought")) {
-    return NextResponse.redirect("http://localhost:3000/");
+    return NextResponse.redirect("https://brave-thought.vercel.app/");
   }
-
-  //   if (verify && url === "http://localhost:3000/") {
-  //     return NextResponse.redirect("http://localhost:3000/profile");
-  //   }
 }
